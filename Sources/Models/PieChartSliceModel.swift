@@ -10,11 +10,20 @@ import SwiftUI
 
 struct PieChartSliceModel: PieChartAnySliceProtocol {
     var value: Double
-    var subSlices: [PieChartSubSliceModel] = []
-    
     var color: Color
     
     var startDegree: Double
     var endDegree: Double
+    
+    var subSlices: [PieChartSubSliceModel]
+    
+    public init(value: Double, color: Color, startDegree: Double, endDegree: Double, subSlices: [PieChartSubSliceModel] = []) {
+        self.value = value
+        self.color = color
+        
+        self.startDegree = startDegree
+        self.endDegree = endDegree
+        self.subSlices = subSlices
+    }
 }
 

@@ -7,7 +7,7 @@
 //
 
 class PieChartSliceFactory {
-    func createPieChartSlicesFromItems(items: [PieChartItemModel], initialDegree: Double, maxShapeDegree: Double) -> [PieChartSliceModel] {
+    func createPieChartSlicesFromItems(items: [PieChartItemModel], maxShapeDegree: Double, initialDegree: Double = 0.0) -> [PieChartSliceModel] {
         var slices: [PieChartSliceModel] = []
         var previousSliceEndDegree = initialDegree
         
@@ -19,17 +19,16 @@ class PieChartSliceFactory {
             let sliceStartDegree = previousSliceEndDegree
             let proportionalValue = item.value / maxSumSliceValue
             
-            let sliceEndDegree = sliceStartDegree + proportionalValue * maxShapeDegree / Double(itemIndex)
+            let sliceEndDegree = sliceStartDegree + proportionalValue * maxShapeDegree
             
             var subslices: [PieChartSubSliceModel] = []
             if item.subItems.count > 0 {
                 let sliceIndex = itemIndex + 1
                 subslices = createPieChartSubSlicesFromItems(items: item.subItems, initialDegree: previousSliceEndDegree, maxShapeDegree: sliceEndDegree, withIndex: sliceIndex)
             }
-            previousSliceEndDegree = sliceEndDegree
-            
-            let slice = PieChartSliceModel(value: item.value, subSlices: subslices, color: item.color, startDegree: sliceStartDegree, endDegree: sliceEndDegree)
+            let slice = PieChartSliceModel(value: item.value, color: item.color, startDegree: sliceStartDegree, endDegree: sliceEndDegree, subSlices: subslices)
             slices.append(slice)
+            previousSliceEndDegree = sliceEndDegree
         }
         return slices
     }
@@ -46,10 +45,10 @@ class PieChartSliceFactory {
             let proportionalValue = item.value / maxSumSliceValue
             
             let sliceEndDegree = sliceStartDegree + proportionalValue * maxShapeDegree / Double(sliceIndex)
-            previousSliceEndDegree = sliceEndDegree
             
             let slice = PieChartSubSliceModel(value: item.value, color: item.color, startDegree: sliceStartDegree, endDegree: sliceEndDegree)
             subSlices.append(slice)
+            previousSliceEndDegree = sliceEndDegree
         }
         return subSlices
     }

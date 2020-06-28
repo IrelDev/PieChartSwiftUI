@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct PieChartView: View {
+public struct PieChartView: View {
     @ObservedObject var items: PCItems
     var sliceSeparatorColor: Color
     
@@ -17,11 +17,11 @@ struct PieChartView: View {
         self.sliceSeparatorColor = sliceSeparatorColor
     }
     
-    var body: some View {
+    public var body: some View {
         let sliceFactory = PieChartSliceFactory()
         let circleShapeMaxDegree = 360.0
         
-        let slices = sliceFactory.createPieChartSlicesFromItems(items: items.items, initialDegree: 0.0, maxShapeDegree: circleShapeMaxDegree)
+        let slices = sliceFactory.createPieChartSlicesFromItems(items: items.items, maxShapeDegree: circleShapeMaxDegree)
         
         return GeometryReader { geometryReader in
             ForEach(0 ..< slices.count, id: \.self) { sliceIndex in

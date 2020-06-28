@@ -14,5 +14,13 @@ struct PieChartSubSliceModel: PieChartAnySliceProtocol {
     
     var startDegree: Double
     var endDegree: Double
+    
+    public init(value: Double, color: Color, startDegree: Double, endDegree: Double) {
+        self.value = value
+        self.color = color
+        
+        self.startDegree = startDegree
+        self.endDegree = endDegree
+    }
 }
 
