@@ -8,12 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		9D421DB624A8E5C500B43DDE /* PieChartSwiftUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D421DB424A8E5C500B43DDE /* PieChartSwiftUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D421DC024A8E6FE00B43DDE /* PieChartAnySliceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DBF24A8E6FE00B43DDE /* PieChartAnySliceProtocol.swift */; };
+		9D421DC324A8E72700B43DDE /* PieChartSliceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DC224A8E72700B43DDE /* PieChartSliceModel.swift */; };
+		9D421DC524A8E73000B43DDE /* PieChartSubSliceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DC424A8E73000B43DDE /* PieChartSubSliceModel.swift */; };
+		9D421DC724A8E74600B43DDE /* PieChartItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DC624A8E74600B43DDE /* PieChartItemModel.swift */; };
+		9D421DC924A8E75200B43DDE /* PieChartObservableItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DC824A8E75200B43DDE /* PieChartObservableItemsModel.swift */; };
+		9D421DCC24A8E7AD00B43DDE /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DCB24A8E7AD00B43DDE /* PieChartView.swift */; };
+		9D421DCE24A8E7E500B43DDE /* PieChartSubSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DCD24A8E7E500B43DDE /* PieChartSubSliceView.swift */; };
+		9D421DD024A8E80900B43DDE /* PieChartSliceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DCF24A8E80900B43DDE /* PieChartSliceView.swift */; };
+		9D421DD324A8E83E00B43DDE /* PieChartSliceShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DD224A8E83E00B43DDE /* PieChartSliceShape.swift */; };
+		9D421DD524A8E85000B43DDE /* PieChartSubSliceShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DD424A8E85000B43DDE /* PieChartSubSliceShape.swift */; };
+		9D421DD724A8E87400B43DDE /* PieChartSliceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DD624A8E87400B43DDE /* PieChartSliceFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D421DB124A8E5C500B43DDE /* PieChartSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PieChartSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D421DB424A8E5C500B43DDE /* PieChartSwiftUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PieChartSwiftUI.h; sourceTree = "<group>"; };
 		9D421DB524A8E5C500B43DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D421DBF24A8E6FE00B43DDE /* PieChartAnySliceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartAnySliceProtocol.swift; sourceTree = "<group>"; };
+		9D421DC224A8E72700B43DDE /* PieChartSliceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSliceModel.swift; sourceTree = "<group>"; };
+		9D421DC424A8E73000B43DDE /* PieChartSubSliceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSubSliceModel.swift; sourceTree = "<group>"; };
+		9D421DC624A8E74600B43DDE /* PieChartItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartItemModel.swift; sourceTree = "<group>"; };
+		9D421DC824A8E75200B43DDE /* PieChartObservableItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartObservableItemsModel.swift; sourceTree = "<group>"; };
+		9D421DCB24A8E7AD00B43DDE /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		9D421DCD24A8E7E500B43DDE /* PieChartSubSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSubSliceView.swift; sourceTree = "<group>"; };
+		9D421DCF24A8E80900B43DDE /* PieChartSliceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSliceView.swift; sourceTree = "<group>"; };
+		9D421DD224A8E83E00B43DDE /* PieChartSliceShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSliceShape.swift; sourceTree = "<group>"; };
+		9D421DD424A8E85000B43DDE /* PieChartSubSliceShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSubSliceShape.swift; sourceTree = "<group>"; };
+		9D421DD624A8E87400B43DDE /* PieChartSliceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartSliceFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +68,53 @@
 		9D421DB324A8E5C500B43DDE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9D421DB424A8E5C500B43DDE /* PieChartSwiftUI.h */,
+				9D421DBE24A8E6DE00B43DDE /* Protocols */,
+				9D421DC124A8E71500B43DDE /* Models */,
+				9D421DCA24A8E79B00B43DDE /* Views */,
+				9D421DD124A8E82700B43DDE /* Shapes */,
+				9D421DD624A8E87400B43DDE /* PieChartSliceFactory.swift */,
 				9D421DB524A8E5C500B43DDE /* Info.plist */,
+				9D421DB424A8E5C500B43DDE /* PieChartSwiftUI.h */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		9D421DBE24A8E6DE00B43DDE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9D421DBF24A8E6FE00B43DDE /* PieChartAnySliceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9D421DC124A8E71500B43DDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D421DC224A8E72700B43DDE /* PieChartSliceModel.swift */,
+				9D421DC424A8E73000B43DDE /* PieChartSubSliceModel.swift */,
+				9D421DC624A8E74600B43DDE /* PieChartItemModel.swift */,
+				9D421DC824A8E75200B43DDE /* PieChartObservableItemsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D421DCA24A8E79B00B43DDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D421DCB24A8E7AD00B43DDE /* PieChartView.swift */,
+				9D421DCF24A8E80900B43DDE /* PieChartSliceView.swift */,
+				9D421DCD24A8E7E500B43DDE /* PieChartSubSliceView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D421DD124A8E82700B43DDE /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				9D421DD224A8E83E00B43DDE /* PieChartSliceShape.swift */,
+				9D421DD424A8E85000B43DDE /* PieChartSubSliceShape.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +160,7 @@
 				TargetAttributes = {
 					9D421DB024A8E5C500B43DDE = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -131,6 +197,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D421DCC24A8E7AD00B43DDE /* PieChartView.swift in Sources */,
+				9D421DC524A8E73000B43DDE /* PieChartSubSliceModel.swift in Sources */,
+				9D421DC324A8E72700B43DDE /* PieChartSliceModel.swift in Sources */,
+				9D421DC924A8E75200B43DDE /* PieChartObservableItemsModel.swift in Sources */,
+				9D421DC724A8E74600B43DDE /* PieChartItemModel.swift in Sources */,
+				9D421DD524A8E85000B43DDE /* PieChartSubSliceShape.swift in Sources */,
+				9D421DD724A8E87400B43DDE /* PieChartSliceFactory.swift in Sources */,
+				9D421DD024A8E80900B43DDE /* PieChartSliceView.swift in Sources */,
+				9D421DCE24A8E7E500B43DDE /* PieChartSubSliceView.swift in Sources */,
+				9D421DC024A8E6FE00B43DDE /* PieChartAnySliceProtocol.swift in Sources */,
+				9D421DD324A8E83E00B43DDE /* PieChartSliceShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +337,7 @@
 		9D421DBA24A8E5C500B43DDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A46C2G8GT3;
@@ -276,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IrelDev.PieChartSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +363,7 @@
 		9D421DBB24A8E5C500B43DDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = A46C2G8GT3;
