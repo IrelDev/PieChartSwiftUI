@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2D565F24A8F38D00699C67 /* PieChartSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D421DB124A8E5C500B43DDE /* PieChartSwiftUI.framework */; };
 		9D421DB624A8E5C500B43DDE /* PieChartSwiftUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D421DB424A8E5C500B43DDE /* PieChartSwiftUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D421DC024A8E6FE00B43DDE /* PieChartAnySliceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DBF24A8E6FE00B43DDE /* PieChartAnySliceProtocol.swift */; };
 		9D421DC324A8E72700B43DDE /* PieChartSliceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D421DC224A8E72700B43DDE /* PieChartSliceModel.swift */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D018DB824A905C2000F52A2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D018DB924A905CA000F52A2 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D421DB124A8E5C500B43DDE /* PieChartSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PieChartSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D421DB424A8E5C500B43DDE /* PieChartSwiftUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PieChartSwiftUI.h; sourceTree = "<group>"; };
 		9D421DB524A8E5C500B43DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,18 +68,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2D565F24A8F38D00699C67 /* PieChartSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D2D565E24A8F38D00699C67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D421DA724A8E5C500B43DDE = {
 			isa = PBXGroup;
 			children = (
+				9D018DB824A905C2000F52A2 /* README.md */,
+				9D018DB924A905CA000F52A2 /* LICENSE */,
 				9D421DDF24A8EA9800B43DDE /* Example */,
 				9D421DB324A8E5C500B43DDE /* Sources */,
 				9D421DB224A8E5C500B43DDE /* Products */,
+				9D2D565E24A8F38D00699C67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
