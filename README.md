@@ -2,7 +2,7 @@
 Simple pie chart built in Swift &amp; SwiftUI
 
 <p align="center">  
-<img src = "Assets/Demo.gif" />
+<img src = "Assets/Demo.gif" /><br>
   <img src = "https://img.shields.io/badge/platform-iOS%2013%2B%20%7C%20macOS%2010.15%2B-lightgrey" />
   <img src = "https://img.shields.io/badge/swift-5.0-orange.svg" />
   <img src = "https://img.shields.io/badge/license-MIT-blue.svg" />
