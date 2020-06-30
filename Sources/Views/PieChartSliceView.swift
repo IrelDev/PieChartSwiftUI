@@ -35,7 +35,7 @@ struct PieChartSliceView: View {
                 GeometryReader { geometryReader in
                     ForEach(0 ..< self.slice.subSlices.count, id: \.self) { subSliceIndex in
                         PieChartSubSliceView(rect: geometryReader.frame(in: .local), subSlice: self.slice.subSlices[subSliceIndex], sliceSeparatorColor: self.sliceSeparatorColor)
-                            .padding(0 - geometryReader.size.width / 2)
+                            .padding(0 - min(geometryReader.size.width, geometryReader.size.height) / 2)
                     }
                 }
             }
