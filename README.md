@@ -33,7 +33,7 @@ After that use `carthage update` command in your terminal.
 If you prefer not to use any dependency managers, you can integrate PieChartSwiftUI into your project manually by copying `Sources` directory.
 
 ## Usage
-PieChartSwiftUI allows you to create pie charts from unique slices with custom colors, as well as create pie charts based on data array.
+PieChartSwiftUI allows you to create pie charts from unique slices with custom colors, as well as create pie charts based on data arrays.
 
 To create unique pie slice use `PieChartItemModel` and create `PCItems` from a `PieChartItemModel` array.
 ```swift
