@@ -10,10 +10,9 @@ import SwiftUI
 import PieChartSwiftUI
 
 struct ContentView: View {
-    @State var indexOfSlice: String = "" //S
+    @State var indexOfSlice: String = ""
     
     var body: some View {
-        
         let firstItem = PieChartItemModel(value: 25, color: .pink)
         let secondItem = PieChartItemModel(value: 25, color: .white)
         let thirdItem = PieChartItemModel(value: 25, color: .red)
@@ -24,8 +23,10 @@ struct ContentView: View {
         return Group {
             VStack {
                 Button(action: {
-                    guard Int(self.indexOfSlice) ?? 0 < items.items.count else { return }
-                    items.items[Int(self.indexOfSlice) ?? 0].color = .purple
+                    let index =  Int(self.indexOfSlice) ?? 0
+                    
+                    guard index < items.items.count else { return }
+                    items.items[index].color = .purple
                 }) {
                     Text("Change color of item at index")
                 }
@@ -33,9 +34,12 @@ struct ContentView: View {
                     .frame(width: 100, height: 20, alignment: .center)
                 
                 Button(action: {
-                    guard Int(self.indexOfSlice) ?? 0 < items.items.count else { return }
-                    let newPieChartItem = PieChartItemModel(value: 25, color: items.items[Int(self.indexOfSlice) ?? 0].color)
-                    items.items[Int(self.indexOfSlice) ?? 0].subItems.append(newPieChartItem)
+                    let index =  Int(self.indexOfSlice) ?? 0
+                    
+                    guard index < items.items.count else { return }
+                    let newPieChartItem = PieChartItemModel(value: 25, color: items.items[index].color)
+                    
+                    items.items[index].subItems.append(newPieChartItem)
                 }) {
                     Text("Add subslice to index")
                 }
