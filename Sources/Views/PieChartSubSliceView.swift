@@ -33,16 +33,16 @@ struct PieChartSubSliceView: View {
             }
         }
     }
-    
-    struct PieChartSubSliceView_Previews: PreviewProvider {
-        static var previews: some View {
-            let pieSlice = PieChartSubSliceModel(value: .zero, color: .orange, startDegree: 50, endDegree: 130)
-            let sliceSeparatorColor = Color.black
-            
-            return GeometryReader { geometryReader in
-                PieChartSubSliceView(rect: geometryReader.frame(in: .local), subSlice: pieSlice, sliceSeparatorColor: sliceSeparatorColor)
-            }
-            .frame(width: 150, height: 150)
+}
+
+struct PieChartSubSliceView_Previews: PreviewProvider {
+    static var previews: some View {
+        let pieSlice = PieChartSubSliceModel(value: .zero, color: .orange, startDegree: 50, endDegree: 130)
+        let sliceSeparatorColor = Color.black
+        
+        return GeometryReader { geometryReader in
+            PieChartSubSliceView(rect: geometryReader.frame(in: .local), subSlice: pieSlice, sliceSeparatorColor: sliceSeparatorColor)
         }
+        .frame(width: 150, height: 150)
     }
 }
