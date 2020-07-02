@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PieChartSwiftUI"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Simple pie chart built in Swift & SwiftUI."
   s.homepage     = "https://github.com/IrelDev/PieChartSwiftUI"
   s.swift_version= '5.0'

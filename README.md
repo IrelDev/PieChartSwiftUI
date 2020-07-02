@@ -8,7 +8,7 @@ Simple pie chart built in Swift &amp; SwiftUI
   <img src = "https://img.shields.io/badge/license-MIT-blue.svg" />
   <img src = "https://img.shields.io/badge/carthage-✔-blue" \>
   <img src = "https://img.shields.io/badge/cocoapods-✔-green.svg" />
-  <img src = "https://img.shields.io/badge/pod-v1.0.0-green" \>
+  <img src = "https://img.shields.io/badge/pod-v1.0.1-green" \>
 </p>
 
 ## Installation
@@ -17,7 +17,7 @@ Simple pie chart built in Swift &amp; SwiftUI
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. To integrate PieChartSwiftUI into your project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'PieChartSwiftUI', '~> 1.0.0'
+pod 'PieChartSwiftUI', '~> 1.0.1'
 ```
 After that use `pod install` command in your terminal.
 
