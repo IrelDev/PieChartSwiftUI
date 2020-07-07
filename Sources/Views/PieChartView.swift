@@ -23,13 +23,27 @@ public struct PieChartView: View {
         
         let slices = sliceFactory.createPieChartSlicesFromItems(items: items.items, maxShapeDegree: circleShapeMaxDegree)
         
-        return GeometryReader { geometryReader in
-            ForEach(0 ..< slices.count, id: \.self) { sliceIndex in
-                PieChartSliceView(rect: geometryReader.frame(in: .local), slice: slices[sliceIndex], sliceSeparatorColor: self.sliceSeparatorColor)
+        return Group {
+            GeometryReader { geometryReader in
+                if slices.count == 1 {
+                    Circle()
+                        .fill(slices.first!.color)
+                        .overlay(Circle().stroke(self.sliceSeparatorColor, lineWidth: 1))
+                        .frame(width: geometryReader.size.width, height: geometryReader.size.height)
+                    
+                    ForEach(0 ..< slices.first!.subSlices.count, id: \.self) { subSliceIndex in
+                        PieChartSubSliceView(rect: geometryReader.frame(in: .local), subSlice: (slices.first!.subSlices[subSliceIndex]), sliceSeparatorColor: self.sliceSeparatorColor)
+                    }
+                } else {
+                    ForEach(0 ..< slices.count, id: \.self) { sliceIndex in
+                        PieChartSliceView(rect: geometryReader.frame(in: .local), slice: slices[sliceIndex], sliceSeparatorColor: self.sliceSeparatorColor)
+                    }
+                }
             }
         }
     }
 }
+
 
 struct PieChartView_Previews: PreviewProvider {
     static var previews: some View {
@@ -49,6 +63,10 @@ struct PieChartView_Previews: PreviewProvider {
             
             PieChartView(items: itemsFromData, sliceSeparatorColor: .white)
                 .frame(width: 100, height: 100, alignment: .center)
+            Spacer()
+            
+            PieChartView(items: PCItems(data: [25.0], chartColor: .red))
+            .frame(width: 100, height: 100, alignment: .center)
             Spacer()
             
         }
